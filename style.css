@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+#main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox .";
+}
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    grid-area: search;
+    height: 30px;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#google-search-btn {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#random-search-btn {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
